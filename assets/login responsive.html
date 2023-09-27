@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="assets/image/xampp.png" alt="Logo">
+        <h2>Masuk ke Akun Anda</h2>
+        
+        <form action="/proses-login" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Masukkan Username" class="input-field" required><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Masukkan Password" class="input-field" required><br>
+            
+            <div class="captcha-field">
+                <label for="captcha">Captcha:</label>
+                <input type="text" id="captcha" name="captcha" class="captcha-input" placeholder="Masukkan Captcha" required>
+                <img src="assets/image/chaptcha.jpg" alt="Captcha" class="captcha-image">
+            </div>
+            
+            <div class="video-control">
+                <video controls width="100%" height="auto">
+                    <source src="assets/mp4/videos.mp4" type="video/mp4">
+                    
+                    Maaf, peramban Anda tidak mendukung pemutaran video.
+                </video>
+            </div>
+            
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        
+        <p>Belum punya akun? <a href="#">Daftar di sini</a></p>
+    </div>
+</body>
+</html>
